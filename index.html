@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
@@ -34,10 +34,12 @@
 
             <section class="info">
 
-                <form class="info__map">
-                    <label><i class="fa-solid fa-location-dot"></i></label>
-                    <input type="text" placeholder="Paris, Belleville" value="Paris, Belleville" id="input" />
-                </form>
+                <div class="info__search">
+                    <form class="info__map">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Paris, Belleville" value="Paris, Belleville" id="input" />
+                    </form>
+                </div>
 
                 <div class="info__description">
                     <h1 class="info__title">Réservez le menu qui vous convient</h1>
@@ -49,91 +51,113 @@
             <section class="fonctionnement">
                 <h1 class="fonctionnement__title">Fonctionnement</h1>
                 <div class="boutons">
-                    <div class="boutons__chois">
-                        <div class="boutons__chois number">1</div>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <span>Choisissez un restaurant</span>
+                    <a href="#restaurant" class="boutons__choise">
+                        <div class="boutons__item">
+                            <p class="boutons__number">1</p>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Choissisez un restaurant</p>
+                        </div>
+                    </a>
+                    <a href="#restaurant" class="boutons__choise">
+                        <div class="boutons__item">
+                            <p class="boutons__number">2</p>
+                            <i class="fa-solid fa-list-ul"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                    </a>
+                    <a href="#restaurant" class="boutons__choise">
+                        <div class="boutons__item">
+                            <p class="boutons__number">3</p>
+                            <i class="fa-solid fa-store"></i>
+                            <p>Dégustez au restaurant</p>
+                        </div>
+                    </a>
 
-                    </div>
-                    <div class="boutons__chois">
-                        <div class="boutons__chois number">2</div>
-                        <i class="fa-solid fa-list-ul"></i>
-                        <span>Composez votre menu</span>
-                    </div>
-                    <div class="boutons__chois">
-                        <div class="boutons__chois number">3</div>
-                        <i class="fa-solid fa-store"></i>
-                        <span>Déguster au restaurant</span>
-                    </div>
                 </div>
             </section>
 
             <section class="restaurants" id="restaurants">
-                <div class="restaurants__title">
-                    <h1>Restaurants</h1>
-                </div>
-                <div class="restaurants__cards">
-                    <article class="restaurants__cards card">
-                        <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                            alt="Image de l'assiette montrant un plat">
-                        <div class="restaurants__cards card card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">La palette du goût</h3>
-                                <p class="card-subtitle">Ménilmontant</p>
+                <h1>Restaurants</h1>
+
+
+                <div class="restaurants__content">
+
+                    <a href='/html/palette_du_gout'>
+                        <article class="restaurants__card">
+                            <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                alt="Image de l'assiette montrant un plat">
+                            <p class="restaurants__new">Nouveau</p>
+                            <div class="restaurants__detail">
+                                <div class="restaurants-txt">
+                                    <h3 class="restaurants__title">La palette du goût</h3>
+                                    <p class="restaurants__subtitle">Ménilmontant</p>
+                                </div>
+                                <div class="restaurants__like">
+                                    <i class="fa-regular fa-heart like__icon"></i>
+                                </div>
                             </div>
-                            <div class="like">
-                                <i class="fa-regular fa-heart"></i>
+                        </article>
+                    </a>
+
+                    <a href='/html/note_enchantee'>
+                        <article class="restaurants__card">
+                            <img src="./images/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                alt="Image de l'assiette montrant un plat">
+                            <p class="restaurants__new">Nouveau</p>
+                            <div class="restaurants__detail">
+                                <div class="restaurants-txt">
+                                    <h3 class="restaurants__title">La note enchantée</h3>
+                                    <p class="restaurants__subtitle">Charonne</p>
+                                </div>
+                                <div class="restaurants__like">
+                                    <i class="fa-regular fa-heart like__icon"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="restaurants__cards card">
-                        <img src="./images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image de l'assiette montrant un plat">
-                        <div class="restaurants__cards card card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">La note enchantée</h3>
-                                <p class="card-subtitle">Charonne</p>
+                        </article>
+                    </a>
+
+                    <a href='/html/a_la_francaise'>
+                        <article class="restaurants__card">
+                            <img src="./images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                alt="Image de l'assiette montrant un plat">
+                            <p class="restaurants__new">Nouveau</p>
+                            <div class="restaurants__detail">
+                                <div class="restaurants-txt">
+                                    <h3 class="restaurants__title">À la française</h3>
+                                    <p class="restaurants__subtitle">Cité Rouge</p>
+                                </div>
+                                <div class="restaurants__like">
+                                    <i class="fa-regular fa-heart like__icon"></i>
+                                </div>
                             </div>
-                            <div class="like">
-                                <i class="fa-regular fa-heart"></i>
+                        </article>
+                    </a>
+
+                    <a href='/html/le_delice_des_sens'>
+                        <article class="restaurants__card">
+                            <img src="./images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                alt="Image de l'assiette montrant un plat">
+                            <p class="restaurants__new">Nouveau</p>
+                            <div class="restaurants__detail">
+                                <div class="restaurants-txt">
+                                    <h3 class="restaurants__title">Le délice des sens</h3>
+                                    <p class="restaurants__subtitle">Folie-Méricourt</p>
+                                </div>
+                                <div class="restaurants__like">
+                                    <i class="fa-regular fa-heart like__icon"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="restaurants__cards card">
-                        <img src="./images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                            alt="Image de l'assiette montrant un plat">
-                        <div class="restaurants__cards card card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">À la française</h3>
-                                <p class="card-subtitle">Cité Rouge</p>
-                            </div>
-                            <div class="like">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="restaurants__cards card">
-                        <img src="./images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                            alt="Image de l'assiette montrant un plat">
-                        <div class="restaurants__cards card card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">Le délice des sens</h3>
-                                <p class="card-subtitle">Folie-Méricourt</p>
-                            </div>
-                            <div class="like">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                        </div>
-                    </article>
+                        </article>
+                    </a>
+
                 </div>
             </section>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="footer__logo">
-            <img src="logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
-        </div>
-        <ul class="footer__links">
+        <h2 class="footer__title">ohmyfood</h2>
+        <ul class="footer__list">
             <li class="footer__link">
                 <a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
             </li>
