@@ -29,7 +29,7 @@ a {
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
-   
+
 
     &__logo {
         display: flex;
@@ -292,6 +292,7 @@ a {
         display: block;
         margin-left: 2rem;
         font-size: 19px;
+        font-weight: 400;
     }
 
     &__list {
@@ -308,6 +309,14 @@ a {
 
     a {
         color: white;
+    }
+
+    .fa-utensils {
+        margin-right: 0.7rem;
+    }
+
+    .fa-handshake-angle {
+        margin-right: 0.4rem;
     }
 }
 
@@ -436,11 +445,11 @@ a {
     .footer__list {
         display: flex;
         justify-content: center;
-        padding:0;
+        padding: 0;
         gap: 2rem;
     }
 
-   
+
 
     .footer__title {
         padding-bottom: 1rem;
@@ -455,6 +464,7 @@ a {
         width: 100%;
         max-width: 100%;
     }
+
     .fonctionnement {
         padding-left: 7rem;
         padding-right: 7rem;
