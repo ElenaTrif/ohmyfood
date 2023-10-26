@@ -87,7 +87,7 @@ a {
         margin-inline-end: 0;
         width: 80%;
         font-family: $fontTitle;
-        font-size: 1.7rem;
+        font-size: 27px;
         font-weight: 400;
     }
 
@@ -95,6 +95,18 @@ a {
         display: block;
         box-sizing: border-box;
 
+    }
+    &__food {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    &__description {
+        font-weight: 300;
+        font-size: 15px;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 15px;
     }
 
 }
@@ -154,7 +166,8 @@ a {
 }
 
 .menu__price {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items: flex-end;
     justify-content: center;
 }
@@ -193,6 +206,8 @@ a {
 .menu__ordertitle {
     margin-bottom: 5px;
     padding-top: 25px;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 @keyframes apparition-item {
@@ -318,7 +333,6 @@ a {
         text-decoration: none;
         color: white;
         box-sizing: border-box;
-
         border-radius: 30px;
         box-shadow: 2px 4px 15px #d2d2d2;
         cursor: pointer;
@@ -338,8 +352,10 @@ a {
     background-color: $foot-color;
     color: #ffffff;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-    padding: 0.5rem 0 0.5rem 5%;
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0;
 
     &__title {
         color: white;
@@ -458,13 +474,21 @@ a {
 
     .like__icon {
         margin-left: -15%;
-        margin-top: -0.6%;
+        margin-top: -0.4%;
     }
 
     .like__icon--full {
         margin-left: -15%;
-        margin-top: -0.6%;
+        margin-top: -0.4%;
     }
+
+     .footer__list {
+        margin-left: 4rem;
+     }
+
+     .footer__title {
+        margin-left: 6.2rem;
+     }
 
     
 

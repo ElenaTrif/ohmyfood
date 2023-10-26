@@ -79,12 +79,24 @@ a {
   margin-inline-end: 0;
   width: 80%;
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.7rem;
+  font-size: 27px;
   font-weight: 400;
 }
 .menu__selection {
   display: block;
   box-sizing: border-box;
+}
+.menu__food {
+  font-weight: 500;
+  font-size: 18px;
+}
+.menu__description {
+  font-weight: 300;
+  font-size: 15px;
+}
+.menu__price {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .like__icon {
@@ -141,7 +153,8 @@ a {
 }
 
 .menu__price {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: center;
 }
@@ -178,6 +191,8 @@ a {
 .menu__ordertitle {
   margin-bottom: 5px;
   padding-top: 25px;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 @keyframes apparition-item {
@@ -306,8 +321,10 @@ a {
   background-color: #353535;
   color: #ffffff;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
-  padding: 0.5rem 0 0.5rem 5%;
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0;
 }
 .footer__title {
   color: white;
@@ -404,10 +421,16 @@ a {
   }
   .like__icon {
     margin-left: -15%;
-    margin-top: -0.6%;
+    margin-top: -0.4%;
   }
   .like__icon--full {
     margin-left: -15%;
-    margin-top: -0.6%;
+    margin-top: -0.4%;
+  }
+  .footer__list {
+    margin-left: 4rem;
+  }
+  .footer__title {
+    margin-left: 6.2rem;
   }
 }/*# sourceMappingURL=styles1.css.map */
