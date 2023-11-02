@@ -108,6 +108,7 @@ a {
         padding-left: 70px;
         padding-right: 70px;
         margin-bottom: 0;
+        width: 100%;
     }
 
     &__text {
@@ -116,6 +117,7 @@ a {
         padding-left: 40px;
         padding-right: 40px;
         margin-top: 0;
+        width: 100%;
     }
 
     &__btn {
@@ -272,7 +274,7 @@ a {
 
     img {
         width: 100%;
-        height: 70%;
+        height: 60%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
@@ -389,7 +391,31 @@ a {
 
 
 
+@media screen and (min-width: 767px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
 
+    .fonctionnement {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .footer {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -536,28 +562,3 @@ a {
 }
 
 
-@media screen and (min-width: 767px) {
-    body {
-        overflow-x: hidden;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .fonctionnement {
-        padding-left: 7rem;
-        padding-right: 7rem;
-    }
-
-    .restaurants {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 7rem;
-        padding-right: 7rem;
-    }
-
-    .footer {
-        padding-left: 5rem;
-        padding-right: 5rem;
-    }
-}
