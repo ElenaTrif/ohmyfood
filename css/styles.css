@@ -80,7 +80,7 @@ a {
   font-size: 16px;
 }
 .info__map .fa-location-dot {
-  padding-left: 5.2rem;
+  padding-left: 3rem;
 }
 .info__description {
   display: flex;
@@ -88,10 +88,10 @@ a {
   justify-content: center;
   align-items: center;
   gap: 0.9rem;
-  width: 100%;
   text-align: center;
   background-color: #f6f6f6;
-  padding: 30px 30px 55px 30px;
+  padding: 30px 5px 55px 5px;
+  min-width: 100%;
 }
 .info__title {
   display: block;
@@ -252,7 +252,6 @@ a {
 
 .footer {
   background-color: #353535;
-  width: 100%;
   height: 100%;
   padding: 0.5rem 0 0.5rem 0;
 }
@@ -351,6 +350,9 @@ a {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
+  }
+  .info__description {
+    min-width: 100%;
   }
   .fonctionnement {
     padding-left: 7rem;
