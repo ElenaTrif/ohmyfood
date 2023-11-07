@@ -25,6 +25,11 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
 h3 {
   font-size: 18px;
   font-weight: 700;
@@ -461,10 +466,6 @@ h3 {
     max-width: 100%;
     display: flex;
   }
-  .boutons .fa-solid {
-    margin-left: -1rem;
-    margin-right: 0.5rem;
-  }
   .boutons__txt {
     padding-left: 0.5rem;
     margin-left: -0.5rem;
@@ -474,16 +475,14 @@ h3 {
   .boutons__item {
     width: 100%;
   }
+  .boutons .fa-solid {
+    margin-left: -1rem;
+    margin-right: 0.5rem;
+  }
   .restaurants {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .restaurants h1 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-bottom: 0;
-    margin-top: 0;
   }
   .restaurants__content {
     display: grid;
@@ -500,6 +499,12 @@ h3 {
   }
   .restaurants__title {
     margin-top: 0.8rem;
+  }
+  .restaurants h1 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .footer {
     max-width: 100%;

@@ -51,7 +51,7 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 300px;
+    height: 275px;
 }
 
 .menu__image img {
@@ -98,6 +98,124 @@ a {
 
     }
 
+    &__btn {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        background-color: white;
+        padding-left: 5px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 10px 0;
+        height: 70px;
+    }
+
+    &__food {
+        margin-bottom: -4px;
+        font-weight: 500;
+        font-size: 18px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__description {
+        font-weight: 300;
+        font-size: 15px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    &__text {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        padding-left: 7px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__check {
+        background-color: $third-color;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        color: white;
+        width: 4.3em;
+        height: 100%;
+        margin-right: -4.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+
+
+    &__btn:hover {
+        cursor: pointer;
+    }
+
+    &__btn:hover>.menu__check {
+        margin: 0;
+        visibility: visible;
+        transition: all 0.8s;
+    }
+
+    &__euro {
+        width: 60px;
+        height: 100%;
+        display: flex;
+        padding-top: 2rem;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__order {
+        display: flex;
+        flex-direction: column;
+        animation: apparition-item 0.75s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    &__order:nth-child(1) {
+        animation-delay: 0.25s;
+    }
+
+    &__order:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    &__order:nth-child(3) {
+        animation-delay: 0.75s;
+    }
+
+    &__ordertitle::after {
+        border-bottom: 3px solid $third-color;
+        content: "";
+        display: block;
+        width: 40px;
+        height: 5px;
+    }
+
+    &__ordertitle {
+        margin-bottom: 5px;
+        padding-top: 25px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
 }
 
 .like__icon {
@@ -123,135 +241,7 @@ a {
     background-image: linear-gradient($second-color, $main-color);
 }
 
-.menu__btn {
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    background-color: white;
-    padding-left: 5px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 10px 0;
-    height: 70px;
-}
 
-.menu__food {
-    margin-bottom: -4px;
-    font-weight: 500;
-    font-size: 18px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.menu__description {
-    font-weight: 300;
-    font-size: 15px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.menu__price {
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.menu__text {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    padding-left: 7px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.menu__check {
-    background-color: $third-color;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    color: white;
-    width: 4.3em;
-    height: 100%;
-    margin-right: -4.3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.3s;
-    cursor: pointer;
-}
-
-
-.menu__btn:hover {
-    cursor: pointer;
-}
-
-.menu__btn:hover>.menu__check {
-    margin: 0;
-    visibility: visible;
-    transition: all 0.8s;
-}
-
-.menu__euro {
-    width: 60px;
-    height: 100%;
-    display: flex;
-    padding-top: 2rem;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-}
-
-.menu__order {
-    display: flex;
-    flex-direction: column;
-    animation: apparition-item 0.75s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    height: auto;
-    width: 100%;
-}
-
-.menu__order:nth-child(1) {
-    animation-delay: 0.25s;
-}
-
-.menu__order:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-.menu__order:nth-child(3) {
-    animation-delay: 0.75s;
-}
-
-.menu__ordertitle::after {
-    border-bottom: 3px solid $third-color;
-    content: "";
-    display: block;
-    width: 40px;
-    height: 5px;
-}
-
-.menu__ordertitle {
-    margin-bottom: 5px;
-    padding-top: 25px;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-@keyframes apparition-item {
-    from {
-        opacity: 0%;
-        transform: translateY(25px);
-    }
-
-    to {
-        opacity: 100%;
-        transform: translateY(0px);
-    }
-}
 
 .commande {
     width: 100%;
@@ -324,6 +314,19 @@ a {
     }
 }
 
+@keyframes apparition-item {
+    from {
+        opacity: 0%;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+
 
 @media screen and (min-width: 767px) {
     body {
@@ -373,17 +376,15 @@ a {
     .footer {
         padding-left: 5%;
         padding-right: 5%;
-    
-    }
 
-    .footer__list {
-        margin-left: 4rem;
-    }
+        &__list {
+            margin-left: 4rem;
+        }
 
-    .footer__title {
-        margin-left: 6.2rem;
+        &__title {
+            margin-left: 6.2rem;
+        }
     }
-
 }
 
 
@@ -398,6 +399,7 @@ a {
 
     .header {
         height: 5rem;
+
         img {
             max-width: 200px;
         }
@@ -428,21 +430,21 @@ a {
         flex-direction: row-reverse;
         height: 5rem;
         padding-top: 4rem;
-        padding-left: -3rem;
         height: 100%;
-    }
 
-    .footer__list {
-        display: flex;
-        margin-right: -15rem;
-        gap: 1.5rem;
-        white-space: nowrap;
-    }
 
-    .footer__title {
-        padding-bottom: 1rem;
-        padding-left: +12rem;
-        display: block;
+        &__list {
+            display: flex;
+            margin-right: -15rem;
+            gap: 1.5rem;
+            white-space: nowrap;
+        }
+
+        &__title {
+            padding-bottom: 1rem;
+            padding-left: +12rem;
+            display: block;
+        }
     }
 
 }
